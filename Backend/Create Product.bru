@@ -1,0 +1,25 @@
+meta {
+  name: Create Product
+  type: http
+  seq: 5
+}
+
+post {
+  url: http://localhost:5000/api/marketplace
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Ik5hc3RpdGlAZXhhbXBsZS5jb20iLCJ1c2VySWQiOiI2NjIzZTRjYjdlOTdkYmE0OWE0MjEzMTYiLCJpYXQiOjE3MTQ5MjM2MTIsImV4cCI6MTcxNTAxMDAxMn0.iX-sspuDIQmvcZY_aB8myxYRMjP_-ovP6k_EjNhyGbo
+}
+
+body:json {
+   {
+      "name": "Redmi 12C",
+      "category": "Elektronik",
+      "description": " Hp yang di lengkapi dengan RAM yang besar",
+      "price": 2000000
+  }
+  
+}
